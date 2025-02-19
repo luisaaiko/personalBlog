@@ -24,3 +24,26 @@ window.onload = function () {
         showPage('classroom-projects', this);
     });
 };
+
+let index = 0;
+    const slides = document.querySelectorAll(".carousel img");
+    const totalSlides = slides.length;
+    const carousel = document.querySelector(".carousel");
+
+    function showSlide() {
+        carousel.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    function nextSlide() {
+        index = (index + 1) % totalSlides;
+        showSlide();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + totalSlides) % totalSlides;
+        showSlide();
+    }
+
+document.getElementById("return-link").addEventListener("click", function() {
+    window.location.href = "index.html#personal-projects";
+});
