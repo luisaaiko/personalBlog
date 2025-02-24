@@ -2,20 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
-    background-color: #ebe5f8;
-}
+    background-color: #efeaf7;}
 
 .sidebar {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between; 
+    height: 100vh; 
     width: 250px;
-    height: 100vh;
-    background-color: #ac9bd0;
-    color: white;
-    padding: 20px;
     position: fixed;
+    left: 0;
+    top: 0;
+    background: #ac9bd0;
+    padding: 20px;
+    color: white;
 }
 
 .sidebar h2 {
     text-align: center;
+}
+
+.sidebar .menu {
+    flex-grow: 1; /* Allows menu items to take available space */
 }
 
 .sidebar a {
@@ -29,6 +37,13 @@ body {
 
 .sidebar a:hover, .sidebar a.active {
     background-color: #653fc7;
+}
+
+.sidebar .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto; /* Push to bottom */
 }
 
 .content {
@@ -127,4 +142,37 @@ body {
     margin: 30px;
     margin-left: 300px;
     padding-left: 10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+    
+  .fa-linkedin {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-github {
+    background: #5c259f;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #ee55e6;
+    color: white;
+  }
+
+  #welcome img {
+    width: 500px; 
+    height: auto; 
 }
