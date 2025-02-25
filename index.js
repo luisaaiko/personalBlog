@@ -20,8 +20,8 @@ window.onload = function () {
     document.getElementById('personal-projects-link').addEventListener('click', function () {
         showPage('personal-projects', this);
     });
-    document.getElementById('classroom-projects-link').addEventListener('click', function () {
-        showPage('classroom-projects', this);
+    document.getElementById('school-projects-link').addEventListener('click', function () {
+        showPage('school-projects', this);
     });
 };
 

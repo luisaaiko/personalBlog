@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines card</title>
+    <link rel="stylesheet" href="index.css">  <!-- Link to CSS -->
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Luisa's Personal Blog</h2>
+        <a id="return-link">Back to projects</a>
+    </div>
+    
+    <div id= "contactManager">
+        <h1>Valentines Day Card</h1>
+
+        <p>This valentines day card was part of a workshop that I did for Girls who code club at UCF, I thought it was a very fun and good learning experience.</p>
+        <p>The workshop taught us how to better use html, css and javascript to make frontend development more interactive</p>
+        <p>We were also able to personalize it how we wanted for valentines day</p>
+
+        <!-- change pics here -->
+        <div class="carousel-container">
+        <div class="carousel">
+            <img src="pictures/cat1.png" alt="Image 1">
+            <img src="pictures/cat2.png" alt="Image 2">
+            <img src="pictures/cat3.png" alt="Image 3">
+            <img src="pictures/cat4.png" alt="Image 3">
+        </div>
+        <div class="buttons">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+        </div>
+
+        <!-- add git link -->
+        <p>You can explore my code on GitHub</p>
+        <a class="btn" href="#" role="button">Valentine's Card</a>
+
+    </div>
+    <script src="index.js"></script>  <!-- Link to JavaScript -->
+</body>
+</html>

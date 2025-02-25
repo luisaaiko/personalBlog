@@ -2,12 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
-    background-color: #efeaf7;}
+    background-color: #efeaf7;
+}
 
+#welcome img {
+    width: 500px; 
+    height: auto;
+}
 .sidebar {
     display: flex;
     flex-direction:column;
-    justify-content: space-between; 
     height: 100vh; 
     width: 250px;
     position: fixed;
@@ -20,10 +24,6 @@ body {
 
 .sidebar h2 {
     text-align: center;
-}
-
-.sidebar .menu {
-    flex-grow: 1; /* Allows menu items to take available space */
 }
 
 .sidebar a {
@@ -43,7 +43,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: auto; /* Push to bottom */
+    margin-top: auto;
 }
 
 .content {
@@ -144,7 +144,7 @@ body {
     padding-left: 10px;
 }
 
-/* Style all font awesome icons */
+/* Style icons */
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -171,8 +171,4 @@ body {
     background: #ee55e6;
     color: white;
   }
-
-  #welcome img {
-    width: 500px; 
-    height: auto; 
-}
+/*--------------------*/
