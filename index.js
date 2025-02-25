@@ -23,6 +23,9 @@ window.onload = function () {
     document.getElementById('school-projects-link').addEventListener('click', function () {
         showPage('school-projects', this);
     });
+    document.getElementById('technologies-link').addEventListener('click', function () {
+        showPage('tech', this);
+    });
 };
 
 let index = 0;

@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     display: flex;
     background-color: #efeaf7;
 }
@@ -30,7 +29,6 @@ body {
     display: block;
     color: white;
     padding: 10px;
-    text-decoration: none;
     margin: 5px 0;
     cursor: pointer;
 }
@@ -69,7 +67,6 @@ body {
     color: #fff;
     background-color: #653fc7;
     border: none;
-    border-radius: 4px;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -172,3 +169,8 @@ body {
     color: white;
   }
 /*--------------------*/
+
+#tech img{
+    height: 40px;
+    width: 40px;
+}
