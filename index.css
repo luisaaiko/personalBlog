@@ -9,47 +9,49 @@ body {
     width: 500px; 
     height: auto;
 }
-.sidebar {
+.top {
     display: flex;
-    flex-direction:column;
-    height: 100vh; 
-    width: 250px;
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
+    width: 100%;
     background: #ac9bd0;
-    padding: 20px;
+    padding: 15px 20px;
     color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
 }
 
-.sidebar h2 {
-    text-align: center;
-}
-
-.sidebar a {
-    display: block;
+.top a {
     color: white;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
 }
 
-.sidebar a:hover, .sidebar a.active {
+.top a:hover, .top a.active {
     background-color: #653fc7;
+    border-radius: 5px;
 }
 
-.sidebar .social-icons {
+.social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: auto;
+    gap: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ac9bd0;
+    padding: 10px 0;
 }
 
 .content {
-    margin-left: 300px;
+    margin: 80px auto;
     padding: 20px;
-    flex: 1;
-    transition: opacity 0.3s ease-in-out;
+    max-width: 800px; /* Set a max width */
+    text-align: center;
 }
 
 .content div {
@@ -60,6 +62,7 @@ body {
     display: block;
 }
 
+/* project buttons */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -81,6 +84,7 @@ body {
 .btn:active {
     background-color: #450085;
 }
+/*------------------*/
 
 * {
     box-sizing: border-box;
@@ -108,6 +112,7 @@ body {
     height: auto;
 }
 
+/*carousel buttons */
 .buttons {
     position: absolute;
     top: 50%;
@@ -174,4 +179,14 @@ body {
 #tech img{
     height: 40px;
     width: 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /* Adds spacing between menu items */
+    align-items: center;
+}
+.menu h2 {
+    margin-right: auto; /* Pushes menu to the right */
+    font-size: 22px; /* Adjust as needed */
 }

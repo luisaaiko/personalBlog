@@ -7,7 +7,7 @@ window.onload = function () {
         document.getElementById(pageId).classList.add('active');
 
         // Remove active class from all menu items
-        document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
+        document.querySelectorAll('.top a').forEach(a => a.classList.remove('active'));
 
         // Add active class to clicked menu item
         element.classList.add('active');
